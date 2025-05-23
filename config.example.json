@@ -8,6 +8,8 @@
             "options": {
                 "use_backpack_tf": true,
                 "backpack_tf_token": "token",
+                "backpack_tf_buy_details": "{price} ⚡️ Stock {in_stock}/{max_stock_string} ⚡️ 24/7 FAST ⚡️ Offer or chat me. (double-click Ctrl+C): sell_1x_{formatted_sku}",
+                "backpack_tf_sell_details": "{price} ⚡️ I have {in_stock} ⚡️ 24/7 FAST ⚡️ Offer (try to take it for free, I'll counter) or chat me. (double-click Ctrl+C): buy_1x_{formatted_sku}",
                 "accept_donations": true,
                 "decline_trade_hold": true,
                 "save_trade_offers": true,

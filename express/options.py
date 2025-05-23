@@ -16,6 +16,8 @@ class Options:
     inventory_provider: str = "steamcommunity"  # steamsupply, expressload, etc.
     inventory_api_key: str = ""  # api key for the inventory provider
     backpack_tf_user_agent: str = "Listing goin' up!"
+    backpack_tf_buy_details: str = "{price} ⚡️ Stock {in_stock}/{max_stock_string} ⚡️ 24/7 FAST ⚡️ Offer or chat me. (double-click Ctrl+C): sell_1x_{formatted_sku}"
+    backpack_tf_sell_details: str = "{price} ⚡️ I have {in_stock} ⚡️ 24/7 FAST ⚡️ Offer (try to take it for free, I'll counter) or chat me. (double-click Ctrl+C): buy_1x_{formatted_sku}"
     accept_donations: bool = True
     auto_counter_bad_offers: bool = True  # counter offers with wrong values
     decline_trade_hold: bool = True

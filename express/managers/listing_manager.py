@@ -71,18 +71,12 @@ class ListingManager:
 
     def _get_sell_listing_details(self, sku: str, currencies: dict) -> str:
         variables = self._get_listing_variables(sku, currencies)
-        sell_details = "{price} ⚡️ I have {in_stock} ⚡️ 24/7 FAST ⚡️ "
-        sell_details += "Offer (try to take it for free, I'll counter) or chat me. "
-        sell_details += "(double-click Ctrl+C): buy_1x_{formatted_sku}"
-
+        sell_details = self.options.backpack_tf_sell_details
         return sell_details.format(**variables)
 
     def _get_buy_listing_details(self, sku: str, currencies: dict) -> str:
         variables = self._get_listing_variables(sku, currencies)
-        buy_details = "{price} ⚡️ Stock {in_stock}/{max_stock_string} ⚡️ 24/7 FAST ⚡️ "
-        buy_details += "Offer or chat me. "
-        buy_details += "(double-click Ctrl+C): sell_1x_{formatted_sku}"
-
+        buy_details = self.options.backpack_tf_buy_details
         return buy_details.format(**variables)
 
     def _get_listing_details(self, sku: str, intent: str, currencies: dict) -> str:
